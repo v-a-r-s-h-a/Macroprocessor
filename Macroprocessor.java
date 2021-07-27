@@ -1,15 +1,8 @@
-// Submitted By - VARSHA YADAV
-// Student ID - BTBTI19069
-// Examination Roll No - 1913656
-// First Home Assignment
-// CS 216 Systems Programming
-// Class - B.Tech(IT) IV Semester
-// Date - 05/03/2021
 // Macroprocessor using Two Pass Algorithm -
 
 import java.io.*;
 import java.util.*;
-class Macroprocessor_1913656_CS216
+class Macroprocessor
 {
     public static void main(String args[])throws IOException
     {
@@ -25,7 +18,7 @@ class Macroprocessor_1913656_CS216
     {
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br=new BufferedReader(isr);
-        FileWriter fw =new FileWriter("C:\\Users\\hp\\Documents\\practice\\Input.txt");
+        FileWriter fw =new FileWriter("Input.txt");
         BufferedWriter bw = new BufferedWriter(fw);
         PrintWriter pw = new PrintWriter(bw);
         System.out.println("Enter data for input file :");
@@ -43,18 +36,18 @@ class Macroprocessor_1913656_CS216
 
     public static void Pass1()throws IOException
     {
-        FileReader fr =new FileReader("C:\\Users\\hp\\Documents\\practice\\Input.txt");
+        FileReader fr =new FileReader("Input.txt");
         BufferedReader fbr = new BufferedReader(fr);
 
-        FileWriter fw2 =new FileWriter("C:\\Users\\hp\\Documents\\practice\\MDT.txt");
+        FileWriter fw2 =new FileWriter("MDT.txt");
         BufferedWriter bw2 = new BufferedWriter(fw2);
         PrintWriter pw2 = new PrintWriter(bw2);
 
-        FileWriter fw3 =new FileWriter("C:\\Users\\hp\\Documents\\practice\\MNT.txt");
+        FileWriter fw3 =new FileWriter("MNT.txt");
         BufferedWriter bw3 = new BufferedWriter(fw3);
         PrintWriter pw3 = new PrintWriter(bw3);
 
-        FileWriter fw4 =new FileWriter("C:\\Users\\hp\\Documents\\practice\\Pass1.txt");
+        FileWriter fw4 =new FileWriter("Pass1.txt");
         BufferedWriter bw4 = new BufferedWriter(fw4);
         PrintWriter pw4 = new PrintWriter(bw4);
 
@@ -139,10 +132,10 @@ class Macroprocessor_1913656_CS216
 
     public static void Pass2()throws IOException
     {
-        FileReader fr5 =new FileReader("C:\\Users\\hp\\Documents\\practice\\Pass1.txt");
+        FileReader fr5 =new FileReader("Pass1.txt");
         BufferedReader fbr5 = new BufferedReader(fr5);
 
-        FileWriter fw5 =new FileWriter("C:\\Users\\hp\\Documents\\practice\\OUTPUT.txt");
+        FileWriter fw5 =new FileWriter("OUTPUT.txt");
         BufferedWriter bw5 = new BufferedWriter(fw5);
         PrintWriter pw5 = new PrintWriter(bw5);
 
@@ -171,7 +164,7 @@ class Macroprocessor_1913656_CS216
                 String ala2[]=new String[50];
                 int na=Pass2ala(ala2,l);
 
-                FileReader fr6 =new FileReader("C:\\Users\\hp\\Documents\\practice\\MDT.txt");
+                FileReader fr6 =new FileReader("MDT.txt");
                 BufferedReader fbr6 = new BufferedReader(fr6);
                 //Updating value of mdtp
                 ++mdtp;
@@ -233,7 +226,7 @@ class Macroprocessor_1913656_CS216
 
     public static String FindinMNT(String mn)throws IOException
     {
-        FileReader fr4 =new FileReader("C:\\Users\\hp\\Documents\\practice\\MNT.txt");
+        FileReader fr4 =new FileReader("MNT.txt");
         BufferedReader fbr4 = new BufferedReader(fr4);
         String r="";
         String l;
